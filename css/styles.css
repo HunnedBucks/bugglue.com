@@ -12,26 +12,78 @@
     background-color: pink;
 }
 
-header {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    height: 70px;
-    box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
-    z-index: 2;
+@media only screen and (min-width: 961px) {
+    header {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+        z-index: 2;
+    }
+
+    .menu-item {
+        height: 70px;
+        line-height: 70px;
+        width: 240px;
+        text-align: center;
+        position: relative;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        padding: 0;
+    }
+
+    #main-menu {
+        position: relatve;
+        list-style-type: none;
+        width: 960px;
+        height: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-content: stretch;
+        justify-content: center;
+    }
+
 }
 
-#main-menu {
-    position: relatve;
-    list-style-type: none;
-    width: 960px;
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-content: stretch;
-    justify-content: center;
+@media only screen and (max-width: 960px) {
+    header {
+        top: 0;
+        position: fixed;
+        width: 100%;
+        /* height: 70px; */
+        box-shadow: 0px 8px 16px 8px rgba(0,0,0,0.2);
+        z-index: 2;
+    }
+
+    .menu-item {
+        /* height: 70px; */
+        line-height: 70px;
+        /* width: 190px; */
+        text-align: center;
+        width: 100%;
+        vertical-align: center;
+        /* position: relative; */
+    }
+
+    .menu-item  a {
+        width: 100%;
+        height: 70px;
+        /* position: relative; */
+        /* line-height: 70pc; */
+    }
+
+    #main-menu {
+        position: relatve;
+        list-style-type: none;
+        width: 100%;
+    }
 }
+
+
 
 html, body {
     /* https://stackoverflow.com/questions/16465418/how-to-fit-screen-full-height-using-css (for the detail view thing)*/ 
@@ -40,21 +92,8 @@ html, body {
     Verdana, Segoe, sans-serif;
 }
 
-.menu-item {
-    height: 70px;
-    line-height: 70px;
-    width: 240px;
-    text-align: center;
-    position: relative;
-}
-
 #current-page-button {
     background-color:#C8D8D6;
-}
-
-.menu-item a {
-    text-decoration: none;
-    padding: 0;
 }
 
 .menu-item a:hover {
@@ -64,10 +103,6 @@ html, body {
 .dropdown-item a:hover {
     background-color:white;
 }
-
-/* .dropdown-item a:hover {
-    background-color: white;
-} */
 
 .dropdown-box {
     position: absolute;
@@ -106,7 +141,6 @@ html, body {
 main {
     padding-top: 70px;   /* height of header */
     padding-bottom: 7rem;  /* height of footer */
-    /* background-color: green; */
 }
     
 #main-banner {
@@ -209,12 +243,24 @@ footer {
     width: 100%;
 }
 
-.content-section {
-    min-height: 250px;
-    /* background-color: cyan; */
-    width: 900px;
-    margin: 20px auto;
-    box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.2);
+
+@media only screen and (min-width: 961px) {
+    .content-section {
+        min-height: 250px;
+        /* background-color: cyan; */
+        width: 900px;
+        margin: 20px auto;
+        box-shadow: 0px 0px 16px 8px rgba(0,0,0,0.2);
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+    .content-section {
+        min-height: 250px;
+        /* background-color: cyan; */
+        width: 100%;
+    }
 }
 
 #vertical-center-container {
