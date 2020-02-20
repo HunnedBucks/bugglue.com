@@ -8,32 +8,34 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
-    /* align-items: stretch; */
+    min-height: 100vh;
 }
 
 /* §    header, footer, main */
-header, footer {
-    flex-grow: 0;
-    /* min-height: 1vh; */
+header, main, footer {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 header {
-    /* position: relative; */
     background-color: red;
-    position: relative;
-    min-height: 10vh;
-}
-footer {
-    background-color: yellow;
-    position: relative;
-    min-height: 15vh;
+    height: 60px;
 }
 main {
-    position: relative;
     flex-grow: 1;
     background-color: blue;
-    min-height: 75vh; /* header min-height + footer min-height */
 }
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: yellow;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 /* §    children of header */
 #main-menu {
@@ -41,10 +43,10 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: orange;
+    /* background-color: orange; */
     width: 100%;
     height: 100%;
-    padding: 10px;
+    padding: 10px
 }
 
 /* @media (max-width: 900) {
@@ -77,6 +79,12 @@ main {
 
 .main-menu-item {
     padding: 10px;
+    min-width: 100px;
+}
+
+#footer-text-container {
+    background-color: orange;
+    max-width: 100%;
 }
 
 /* §    children on main */

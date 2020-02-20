@@ -16,7 +16,7 @@
         <textarea id="description" rows="4" cols="50"></textarea>
 
         <input type='submit' name='send-message' value='send'>
-        
+
     </label>
 </form>
 
