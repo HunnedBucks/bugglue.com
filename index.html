@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<meta charset='UTF-8'/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home: Matrix Workflow</title>
+<link rel='stylesheet' href='css/styles.css'/>	
+<script src="scripts/scripts.js"></script>
+</head>
+<body>
+	<header>
+		<ul id='main-menu'>
+            <li>
+                <ul id='nav-menu' class='submenu'>
+                    <li class='main-menu-item'>Home</li>
+                    <!-- <li class='main-menu-item'>Forum</li>
+                    <li class='main-menu-item'>About<li>
+                    <li class='main-menu-item'>Contribute<li> -->
+                </ul>
+            </li>
+        </ul>
+	</header>
+	<main>
+        <div id='WideWrapper'>
+            <h2 class="encrypt-decrypt-heading">File Encryption using RSA-OAEP</h2>
+            <section id='DataInputSection'>
+                    <label id='FileLabel' for="FileInput">Upload a file to encrypt:
+                        <input id='FileInput' type="file" onchange="readFiles(event)">
+                    </label>
+
+                    <!-- <form method="post" enctype="multipart/form-data"> -->
+                        <section class="encrypt-decrypt-controls">
+
+                        <!-- <div id='ContainerForTArea'>
+                            
+                        </div> -->
+                        <label>Enencrypted File
+                            <textarea id="ToEncrypt">No Files Read Yet
+                            </textarea>
+                        </label>
+
+                        <label>
+                            <input id='encryptBtn' class="encrypt-button" type="button" value="Encrypt">
+                        </label>
+                           
+                        <label>Encrypted File
+                            <textarea id="ToDecrypt">No Files Encrypted Yet
+                            </textarea>
+                        </label>
+                    <!-- </form> -->
+                </section>
+            </div>
+        
+        <script src="/scripts/Encryption.js"></script>
+        <script src="/scripts/script.js"></script>
+	</main>
+	<footer>
+		<div id='footer-text-container'>
+            <p>
+                Click here for the <a href='https://github.com/HunnedBucks/bugglue.com'>GitHub repo</a>
+            </p>
+        </div>
+	</footer>
+</body>
+</html>

@@ -18,17 +18,18 @@ header, main, footer {
     padding-right: 10px;
 }
 header {
-    background-color: red;
+    background-color: white;
     height: 60px;
 }
 main {
     flex-grow: 1;
-    background-color: blue;
+    background-color: lightgray;
+    padding-top: 15px;
 }
 footer {
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color: yellow;
+    background-color: white;
     min-height: 100px;
     display: flex;
     flex-direction: column;
@@ -54,11 +55,22 @@ footer {
         flex-direction: column;
     }
 } */
-
+#WideWrapper {
+    padding: 10px;
+    width: 800px;
+    max-width: 100%;
+}
+h2 {
+    background-color: white;
+    margin-bottom: 20px;
+    height: 55px;
+    line-height: 55px;
+    padding-left: 25px;
+}
 #main-menu li {
     list-style-type: none;
     /* display: flex; */
-    background-color: blue;
+    background-color: white;
 }
 
 #main-menu li ul {
@@ -83,9 +95,46 @@ footer {
 }
 
 #footer-text-container {
-    background-color: orange;
+    background-color: white;
     max-width: 100%;
 }
-
+textarea {
+    width: 100%;
+    padding: 10px;
+    height: 90px;
+}
 /* §    children on main */
+label, input, textarea {
+    display: block;
+}
+label {
+    min-height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+
+}
+form {
+    margin-top: 15px;
+}
+#DataInputSection {
+    /* height: 400px; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+/* #FileLabel {
+    width: 100%;
+    background-color: beige;
+} */
+/* #FileInput {
+    margin: 5px 0;
+} */
+input[type='button'] {
+    width: 100px;
+}
+
 /* §    children of footer */
